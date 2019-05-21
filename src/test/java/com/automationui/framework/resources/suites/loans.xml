@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Loans" parallel="false">
+    <listeners>
+        <listener class-name="com.listeners.ListenerTests" />
+    </listeners>
+
+    <test name="LoanTests">
+        <parameter name="loanAmount" value="5000"/>
+        <parameter name="individualAnnualIncome" value="100000"/>
+        <parameter name="additionalAnnualIncome" value="5000"/>
+        <parameter name="fake_password" value="Aabcdef12"/>
+       <classes>
+            <class name="com.automationui.framework.tests.Scripts">
+                <methods>
+                    <include name="checkThatFillingFieldsWithValidDataLoansContinueWithFlow" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

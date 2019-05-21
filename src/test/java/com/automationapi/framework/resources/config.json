@@ -1,0 +1,4 @@
+{
+  "base_api_url": "https://credapi.credify.tech/api/%s/v1/",
+  "config_path": "src/test/java/com/automationapi/framework/resources/config.json"
+}

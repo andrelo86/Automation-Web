@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="StatesTest" parallel="false">
+  <listeners>
+    <listener class-name="com.listeners.ListenerTests"/>
+  </listeners>
+
+  <test name="StatesTestSuite">
+    <parameter name="defaultStatesNumbers" value="48"/>
+    <parameter name="minAge" value="19"/>
+    <parameter name="georgiaMinAmount" value="3005.0"/>
+    <classes>
+      <class name="com.automationapi.framework.test.ApiTest">
+        <methods>
+          <include name="checkThatAllStatesAreValidAndCorrectQuantity"/>
+          <include name="checkThatJustOneStateHasMinAge19AndPrintName"/>
+          <include name="checkOnlyGeorgiaAccomplishWithMinLoanAmountValueOf"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
